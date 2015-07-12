@@ -49,14 +49,14 @@ module.exports = function(grunt) {
 		    },
 		    options: {
 		    	watchTask: true,
-	            proxy: "longform.co.za.dev"
+	            proxy: "longform.co.za.dev",
+	            injectChanges: true
 	        },
 		},
 
 	  	/**
 	  	 * Watch
 	  	 */
-
 		watch: {
 			
 			sass: {
@@ -68,16 +68,18 @@ module.exports = function(grunt) {
 			},
 			php: {
 				files: ['**/*.php'],
-				// options: {
-				// livereload: 35729,
-				// 	}
+				options: {
+				livereload: 35729,
+					}
 				}
 		},
 
 	});
+
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-postcss');
 	grunt.loadNpmTasks('grunt-browser-sync');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.registerTask('default',['browserSync','watch']);
+
 }

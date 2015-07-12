@@ -1,7 +1,7 @@
 # Longform
 WordPress theme for personal project
 
-Longform is a collection of online, longform writing from or about South Africa.
+Longform is (one day... going to be...) a collection of online, longform writing from or about South Africa.
 
 This is a personal side project. No ownership or copyright of items linked to is implied.
 
@@ -11,7 +11,7 @@ While you're welcome to use anything you find here, I strongly advise you not to
 
 <ul>
 	<li>Grunt plugins installed locally, repeat for further projects</li>
-	<li></li>
+	<li>Susy installed globally</li>
 	<li></li>
 	<li></li>			
 </ul>

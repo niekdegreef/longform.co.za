@@ -1,5 +1,5 @@
 //colors
-$color__background-body: red;
+$color__background-body: #fff;
 $color__background-screen: #f1f1f1;
 $color__background-hr: #ccc;
 $color__background-button: #e6e6e6;
@@ -27,6 +27,12 @@ $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+// borders
+
+$border__1 : 1px solid black;
+$border__5 : 5px solid black;
+
 
 // sizes
 $gutter:  1.618em;
