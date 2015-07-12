@@ -15,6 +15,9 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+<script src="//use.typekit.net/vqa3ppf.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
 <?php wp_head(); ?>
 </head>
 
