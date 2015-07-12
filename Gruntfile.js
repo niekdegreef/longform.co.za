@@ -14,6 +14,7 @@ module.exports = function(grunt) {
 		    options: {
 				style: 'expanded',
 				sourcemap: 'auto',
+				require: 'susy'
 		    },
 		    files: {
 		    	'style.css': 'sass/style.scss'
