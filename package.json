@@ -1,0 +1,24 @@
+{
+  "name": "longform",
+  "version": "1.0.0",
+  "description": "Longform.co.za",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niekdegreef/longform.co.za.git"
+  },
+  "author": "Niek de Greef",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niekdegreef/longform.co.za/issues"
+  },
+  "homepage": "https://github.com/niekdegreef/longform.co.za#readme",
+  "devDependencies": {
+    "grunt-postcss": "^0.5.4",
+    "grunt-sass": "^1.0.0",
+    "load-grunt-tasks": "^3.2.0"
+  }
+}

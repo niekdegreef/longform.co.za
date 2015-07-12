@@ -1,0 +1,4 @@
+navigate to folder (cd then drag folder onto terminal)
+
+type 'npm init'
+set up project

@@ -121,8 +121,19 @@ function longform_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+// http://robandlauren.com/2014/02/05/live-reload-grunt-wordpress/
+
+	if (in_array($_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1'))) {
+	  wp_register_script('livereload', 'http://localhost:35729/livereload.js?snipver=1', null, false, true);
+	  wp_enqueue_script('livereload');
+	}
+// end http://robandlauren.com/2014/02/05/live-reload-grunt-wordpress/
+	
 }
 add_action( 'wp_enqueue_scripts', 'longform_scripts' );
+
+
+	
 
 /**
  * Implement the Custom Header feature.
