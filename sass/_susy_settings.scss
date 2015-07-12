@@ -1,0 +1,11 @@
+$susy: (
+  columns: 24,
+  gutters: .5,
+  gutter-position: inside,
+  global-box-sizing: border-box,
+  debug: (
+    image: hide,
+  ),
+);
+
+$gallery_grid: layout(12 0.1 fluid float);

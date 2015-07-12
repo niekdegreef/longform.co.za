@@ -1,5 +1,5 @@
 //colors
-$color__background-body: #fff;
+$color__background-body: red;
 $color__background-screen: #f1f1f1;
 $color__background-hr: #ccc;
 $color__background-button: #e6e6e6;
@@ -27,6 +27,38 @@ $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+// sizes
+$gutter:  1.618em;
+$padding: 0.618em;
+
+$tiny:    22em; 			
+$small:   38em;  			
+$medium:  58.75em; 
+$large:   68.5em; 			
+$xlarge:  90em; 	
+
+// breakpoints
+@mixin breakpoint($point) {
+  @if $point == xxlarge {
+    @media (max-width: $xxlarge) { @content; }
+  }
+  @if $point == xlarge {
+    @media (max-width: $xlarge) { @content; }
+  }
+  @else if $point == large {
+    @media (max-width: $large) { @content; }
+  }
+  @else if $point == medium {
+    @media (max-width: $medium) { @content; }
+  }
+  @else if $point == small {
+    @media (max-width: $small)  { @content; }
+  }
+  @else if $point == smallest {
+    @media (max-width: $tiny)  { @content; }
+  }
+}
 
 // structure
 $size__site-main: 100%;

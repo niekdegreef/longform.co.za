@@ -40,31 +40,49 @@ module.exports = function(grunt) {
 		    }
 		  },
 
+		/**
+		* Browser sync / https://css-tricks.com/cross-browser-css-injection/
+		*/
+		browserSync: {
+		    bsFiles: {
+		        src : 'style.css'
+		    },
+		    options: {
+		    	watchTask: true,
+	            proxy: "longform.co.za.dev"
+	        },
+		},
+
 	  	/**
 	  	 * Watch
 	  	 */
+
 		watch: {
 			
 			sass: {
 				files: ['sass/*.scss'] ,
 				tasks: ['sass' , 'postcss'],
-				options: {
-					livereload: 35729,
-				},
+				// options: {
+				// 	livereload: 35729,
+				// },
 			},
 			php: {
 				files: ['**/*.php'],
-				options: {
-				livereload: 35729,
-					}
+				// options: {
+				// livereload: 35729,
+				// 	}
 				}
 		},
 
 	});
 	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.loadNpmTasks('grunt-contrib-watch');
+	
 	grunt.loadNpmTasks('grunt-postcss');
-	// grunt.loadNpmTasks('grunt-livereload');
-	grunt.registerTask('default',['watch']);
+	
+	grunt.loadNpmTasks('grunt-browser-sync');
+
+	grunt.loadNpmTasks('grunt-contrib-watch');
+
+	grunt.registerTask('default',['browserSync','watch']);
 
 }
